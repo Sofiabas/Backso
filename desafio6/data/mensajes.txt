@@ -1,0 +1,17 @@
+[
+ {
+  "email": "Marcos@gmail.com",
+  "fecha": "04/10/2022 08:27:00",
+  "text": "Hola"
+ },
+ {
+  "email": "Nino@gmail.com",
+  "fecha": "04/10/2022 08:28:50",
+  "text": "Cómo va?"
+ },
+ {
+  "email": "Franco@gmail.com",
+  "fecha": "04/10/2022 08:29:00",
+  "text": "Buenas"
+ }
+]

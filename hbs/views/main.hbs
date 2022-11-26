@@ -1,0 +1,28 @@
+<div class="container">
+ 
+    <br />
+    <h1>Añade un producto</h1>
+    <br />
+    <form action="/productos" method="post">
+        <div class="form-group">
+            <label for="exampleInputEmail1">Nombre</label>
+            <input type="text" class="form-control" name="title" id="title" aria-describedby="emailHelp"
+                placeholder="Ingresa el nombre" />
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Precio</label>
+            <input type="number" class="form-control" name="price" id="price" aria-describedby="emailHelp"
+                placeholder="Ingresa el precio" />
+        </div>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Imagen</label>
+            <input type="text" class="form-control" name="thumbnail" id="thumbnail" aria-describedby="emailHelp"
+                placeholder="Ingresa url de la imagen" />
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary">Enviar</button>
+        <br />
+        <br />
+        <a href="/productos" class="btn btn-secondary">Vista de los Productos</a>
+    </form>
+</div>

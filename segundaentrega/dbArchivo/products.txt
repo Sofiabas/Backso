@@ -1,0 +1,41 @@
+[{
+  "nombre": "Pizza Peperoni",
+  "descripcion": "Pizza de masa crocante con la mejor seleccion de peperoni",
+  "codigo": 5245,
+  "precio": 2900,
+  "stock": 8,
+  "timestamp": 1665517960,
+  "foto": "https://cdn3.iconfinder.com/data/icons/food-and-drink-color/64/food_pizza_fastfood_snack_italian_fat_restaurant-512.png",
+  "id": 1
+ },
+ {
+  "nombre": "Pizza Vegeta",
+  "descripcion": "Pizza para tu amigo veggie",
+  "codigo":  5246,
+  "precio": 2700,
+  "stock": 9,
+  "timestamp":1665518076 ,
+  "foto": "https://cdn2.iconfinder.com/data/icons/pizza-9/500/SingleCartoonDifferentPizzaAlice_14-512.png",
+  "id": 2
+ },
+ {
+  "nombre": "Pizza Meat",
+  "descripcion": "Pizza para los carnívoros",
+  "codigo":  5247,
+  "precio": 2950,
+  "stock": 7,
+  "timestamp": 1665518133,
+  "foto": "https://cdn2.iconfinder.com/data/icons/food-1136/512/pizza-food-cheese-recipe-homemade-512.png",
+  "id": 3
+ },
+ {
+  "nombre": "Pizza Margarita",
+  "descripcion": "Pizza para los carnívoros",
+  "codigo":  5248,
+  "precio": 2500,
+  "stock": 5,
+  "timestamp":1665518213 ,
+  "foto": "https://cdn4.iconfinder.com/data/icons/international-food-2/48/01-neapolitan_pizza_italy-512.png",
+  "id": 4
+ }
+]

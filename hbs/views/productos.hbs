@@ -1,0 +1,33 @@
+<div class="container">
+
+  <br />
+  <h1> Vista de los Productos</h1>
+  {{#if body}}
+    <table class="table" style="background-color: rgb(47, 41, 243); color: rgb(229, 251, 57);">
+      <thead>
+        <tr>
+          <th scope="col">Nombre</th>
+          <th scope="col">Precio</th>
+          <th scope="col">Imagen</th>
+        </tr>
+      </thead>
+      <tbody style="color: gray">
+        {{#each body}}
+          <tr>
+            <td style="color: rgb(44, 42, 42);">{{this.title}}</td>
+            <td style="color: rgb(23, 21, 21);">{{this.price}}</td>
+            <td><img src="{{this.thumbnail}}" /></td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    <br />
+    <form action="/borrado" method="post">
+      <button type="submit" class="btn btn-danger">Borrar todo</button>
+    </form>
+  {{else}}
+    <p>No hay productos</p>
+  {{/if}}
+  <br />
+  <a href="/" class="btn btn-secondary">Añadir Productos</a>
+</div>

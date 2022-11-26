@@ -1,0 +1,49 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>Inicio</title>
+  </head>
+  <body style="background-color: rgb(243, 236, 159)">
+    <div class="container">
+      <!-- Content here -->
+      <br />
+      <h1>Vista del Producto</h1>
+      <% if (!body || body.length < 1) { %>
+      <p>No se han añadido productos</p>
+      <% } else { %>
+      <table class="table" style="background-color: rgb(172, 241, 137); color: white">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Precio</th>
+            <th scope="col">Imagen</th>
+          </tr>
+        </thead>
+        <tbody style="color: gray">
+          <% body.forEach( (elem) => { %>
+          <tr>
+            <td style="color: white"><%= elem.title %></td>
+            <td style="color: white"><%= elem.price %></td>
+            <td><img src="<%= elem.thumbnail %>" /></td>
+          </tr>
+          <% }); %>
+        </tbody>
+      </table>
+      <br />
+      <form action="/borrado" method="post">
+        <button type="submit" class="btn btn-danger">Borrar todo</button>
+      </form>
+      <% }; %>
+      <br />
+      <a href="/" class="btn btn-secondary">Añadir Productos</a>
+    </div>
+  </body>
+</html>
