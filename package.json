@@ -1,8 +1,10 @@
 {
    "type": "module",
    "dependencies": {
+      "autocannon": "^7.10.0",
       "bcrypt": "^5.1.0",
       "cluster": "^0.7.7",
+      "compression": "^1.7.4",
       "connect-mongo": "^4.6.0",
       "cookie-parser": "^1.4.6",
       "cors": "^2.8.5",
@@ -30,6 +32,7 @@
       "sqlite3": "^5.1.2",
       "webpack": "^5.74.0",
       "webpack-cli": "^4.10.0",
+      "winston": "^3.8.2",
       "yargs": "^17.6.2"
    },
    "devDependencies": {
