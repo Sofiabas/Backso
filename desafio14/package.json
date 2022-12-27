@@ -1,8 +1,7 @@
 {
-   "main": "server.js",
    "scripts": {
    "test": "node benchmark.js",
-   "start": "node server.js"
+   "start": "0x server.js"
  },
 
    "type": "module",
