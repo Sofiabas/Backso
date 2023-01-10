@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include(`./partials/head`) %>
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.0/examples/carousel/"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header><%- include('./partials/headerLog', {current: `#`}) %></header>
+
+    <div class="jumbotron">
+      <main>
+        <h5 class="my-4">
+          <img
+            src="/avatar/<%= userLog.foto %>"
+            width="50"
+            height="50"
+            class="rounded-circle"
+          />
+          Bienvenido <%= userLog.username %>!
+        </h5>
+      </main>
+      <img src="https://cdn.shopify.com/s/files/1/1491/3294/files/PCC0002_Website_Banners_Final_2000x10003_6fa281ba-ccf8-45f5-9d3e-0df3de5aac6c_1600x.jpg?v=1614297858" class="img-fluid" alt="banner">
+      <img src="https://cdn.parfumdreams.de/Img/Cms/1/Desktop-Headerbanner-parfumdreamsCampaign-51023_1.jpg" class="img-fluid" alt="banner">
+    </div>
+
+    <footer><%- include('./partials/footer') %></footer>
+  </body>
+</html>
