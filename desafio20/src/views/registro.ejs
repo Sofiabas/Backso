@@ -1,0 +1,80 @@
+<html lang="en">
+  <%- include('./partials/head'); %>
+  <body onload="onLoadRedirect()" style="background-color: lightgray">
+    <%- include('./partials/header'); %>
+    <div class="container">
+      <!-- Content here -->
+      <br />
+      <h1>Registro de Usuario</h1>
+      <br />
+      <form action="" method="post" enctype="multipart/form-data">
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            name="username"
+            id="username"
+            placeholder="Enter username"
+            required
+          />
+          <input
+            type="text"
+            class="form-control"
+            name="password"
+            id="password"
+            placeholder="Enter password"
+            required
+          />
+          <input
+            type="text"
+            class="form-control"
+            name="name"
+            id="name"
+            placeholder="Enter name"
+            required
+          />
+          <input
+            type="text"
+            class="form-control"
+            name="address"
+            id="address"
+            placeholder="Enter address"
+            required
+          />
+          <input
+            type="number"
+            class="form-control"
+            name="age"
+            id="age"
+            type="number"
+            placeholder="Enter age"
+            required
+          />
+          <input
+            type="text"
+            class="form-control"
+            name="phone"
+            id="phone"
+            type="tel"
+            value="+1 "
+            placeholder="Enter phone"
+            required
+          />
+          <input
+            type="file"
+            class="form-control"
+            name="avatar"
+            id="avatar"
+            placeholder="Enter avatar"
+            required
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </div>
+    <div class="container">
+      <a href="/login" class="btn btn-primary">Ir al login</a>
+    </div>
+  </body>
+  <%- include('./partials/footer'); %>
+</html>
