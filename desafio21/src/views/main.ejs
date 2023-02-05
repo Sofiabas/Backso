@@ -1,0 +1,101 @@
+<html lang="en">
+  <%- include('./partials/head'); %>
+  <body onload="onLoadRedirect()" style="background-color: lightgray">
+    <%- include('./partials/header'); %> <% if (user) { %>
+    <div class="container">
+      <!-- Content here -->
+      <br />
+      <div class="container">
+        <!-- Content here -->
+        <br />
+        <h1>Your data</h1>
+        <table class="table" style="background: white">
+          <thead>
+            <tr>
+              <th scope="col">Key</th>
+              <th scope="col">Value</th>
+            </tr>
+          </thead>
+          <tbody id="productos" style="color: gray">
+            <tr>
+              <th scope="col">id</th>
+              <th scope="col"><%= user._id %></th>
+            </tr>
+            <tr>
+              <th scope="col">username</th>
+              <th scope="col"><%= user.username %></th>
+            </tr>
+            <tr>
+              <th scope="col">name</th>
+              <th scope="col"><%= user.name %></th>
+            </tr>
+            <tr>
+              <th scope="col">address</th>
+              <th scope="col"><%= user.address %></th>
+            </tr>
+            <tr>
+              <th scope="col">age</th>
+              <th scope="col"><%= user.age %></th>
+            </tr>
+            <tr>
+              <th scope="col">phone</th>
+              <th scope="col"><%= user.phone %></th>
+            </tr>
+            <tr>
+              <th scope="col">avatar</th>
+              <th scope="col">
+                <img
+                  src="/uploads/<%= user.avatar %>"
+                  style="border-radius: 50%"
+                />
+              </th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br />
+    </div>
+    <% } else { %> <% if (lastuser) { %>
+    <br />
+    <div
+      class="container"
+      style="background: lightpink; border-radius: 5px; padding: 10px"
+    >
+      <!-- Content here -->
+      <h1>Hasta luego <%= lastuser %></h1>
+    </div>
+    <% } else { %>
+    <div class="container">
+      <!-- Content here -->
+      <br />
+      <h1>Login de Usuario</h1>
+      <br />
+      <form action="/login" method="post">
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            name="username"
+            id="username"
+            aria-describedby="emailHelp"
+            placeholder="Enter username"
+          />
+          <input
+            type="text"
+            class="form-control"
+            name="password"
+            id="password"
+            aria-describedby="emailHelp"
+            placeholder="Enter password"
+          />
+        </div>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </div>
+    <div class="container">
+      <a href="/registro" class="btn btn-primary">Ir al registro</a>
+    </div>
+    <% }; %> <% }; %>
+  </body>
+  <%- include('./partials/footer'); %>
+</html>

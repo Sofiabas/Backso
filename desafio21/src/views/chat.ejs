@@ -1,0 +1,35 @@
+<html lang="en">
+  <%- include('./partials/head'); %>
+  <body onload="onLoadRedirect()" style="background-color: lightgray">
+    <%- include('./partials/header'); %>
+    <div class="container">
+      <!-- Content here -->
+      <br />
+      <h1>Chat</h1>
+      <% if (user) { %>
+      <form>
+        <input type="text" id="username" placeholder="Tu email" />
+        <br /><br />
+        <input type="text" id="firstname" placeholder="Tu nombre" />
+        <br /><br />
+        <input type="text" id="lastname" placeholder="Tu apellido" />
+        <br /><br />
+        <input type="text" id="age" placeholder="Tu edad" />
+        <br /><br />
+        <input type="text" id="alias" placeholder="Tu alias" />
+        <br /><br />
+        <input type="text" id="avatar" placeholder="Tu avatar" />
+        <br />
+        <br />
+        <div id="mensajes"></div>
+        <br />
+        <input type="text" id="texto" placeholder="Cuéntanos algo..." />
+        <input onclick="return addMessage(this)" type="button" value="Enviar" />
+      </form>
+      <% } else { %>
+      <p>There is no data yet.</p>
+      <% }; %>
+    </div>
+  </body>
+  <%- include('./partials/footer'); %>
+</html>

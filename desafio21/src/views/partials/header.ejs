@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/products">Products</a>
+
+  <div
+    class="collapse navbar-collapse"
+    id="navbarSupportedContent"
+    style="justify-content: flex-end"
+  >
+    <% if (user) { %>
+    <form action="/logout" method="get" style="margin: 0">
+      <span style="padding: 20">Bienvenido <%= user.name %></span>
+      <a href="/cart" class="btn">Cart</a>
+      <a href="/chat" class="btn">Chat</a>
+      <a href="/login" class="btn">Profile</a>
+      <button type="submit" class="btn">Disconnect</button>
+    </form>
+    <% } else { %>
+    <div style="margin: 0">
+      <a href="/login" class="btn">Login</a>
+      <a href="/registro" class="btn">Register</a>
+    </div>
+    <% } %>
+  </div>
+</nav>

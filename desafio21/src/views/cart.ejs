@@ -1,0 +1,33 @@
+<html lang="en">
+  <%- include('./partials/head'); %>
+  <body onload="onLoadRedirect()" style="background-color: lightgray">
+    <%- include('./partials/header'); %>
+    <div class="container">
+      <!-- Content here -->
+      <br />
+      <h1>Cart</h1>
+      <% if (user) { %>
+      <table class="table" style="background-color: black; color: white">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Picture</th>
+            <th scope="col">Qty</th>
+            <th scope="col">Price</th>
+          </tr>
+        </thead>
+        <tbody id="productos" style="color: gray">
+          <%- body %>
+        </tbody>
+      </table>
+      <p style="text-align: end">Total: <strong><%= total %></strong></p>
+      <form action="/cart" method="post" style="text-align: end">
+        <button type="submit" class="btn">Buy now</button>
+      </form>
+      <% } else { %>
+      <p>There is no data yet.</p>
+      <% }; %>
+    </div>
+  </body>
+  <%- include('./partials/footer'); %>
+</html>

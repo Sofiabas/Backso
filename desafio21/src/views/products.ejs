@@ -1,0 +1,27 @@
+<html lang="en">
+  <%- include('./partials/head'); %>
+  <body onload="onLoadRedirect()" style="background-color: lightgray">
+    <%- include('./partials/header'); %>
+    <div class="container">
+      <!-- Content here -->
+      <br />
+      <h1>Products</h1>
+      <% if (body) { %>
+      <table class="table" style="background-color: black; color: white">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Picture</th>
+          </tr>
+        </thead>
+        <tbody id="productos" style="color: gray">
+          <%- body %>
+        </tbody>
+      </table>
+      <% } else { %>
+      <p>There is no data yet.</p>
+      <% }; %>
+  </body>
+  <%- include('./partials/footer'); %>
+</html>
