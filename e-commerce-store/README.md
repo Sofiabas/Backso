@@ -105,7 +105,7 @@ Dentro de esta capa podemos encontrar un index que posee una clase con un patró
 
 ## App en Produccion
 
-App deployada en:
+App deployada en Railway y Heroku:
 
 ```
 https://taberna-tienda.herokuapp.com/
