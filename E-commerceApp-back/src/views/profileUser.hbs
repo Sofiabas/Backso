@@ -1,0 +1,17 @@
+<h2 class="user">User Profile</h2>
+
+{{#if isUser}}
+    <div class="container text-center my-3">
+        <div class="jumbotron" style="background-color: green;color: white;">
+            <h1>USER OK LOGIN!</h1>
+            <h2><i>Welcome {{user.username}}</i></h2>
+            <br>
+            <h3>Name: {{user.firstName}}</h3>
+            <h3>Last Name: {{user.lastName}}</h3>
+            <h3>Email: {{user.email}}</h3>
+            <form action="/ecommerce">
+                
+            </form>
+        </div>
+    </div>
+{{/if}}

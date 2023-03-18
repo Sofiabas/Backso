@@ -1,0 +1,21 @@
+<div class="container text-center my-3">
+    <div class="jumbotron" style="background-color: green;color: white;">
+        <h1>USER OK LOGIN!</h1>
+        <h2><i>Welcome {{usuario}}</i></h2>
+        <br>
+        <h3>Name: {{nombre}}</h3>
+        <h3>Last Name: {{apellido}}</h3>
+        <h3>Email: {{email}}</h3>
+        
+    </div>
+</div>
+
+<script>
+    function redirect(pagina) {
+        location.href = pagina;
+    } 
+
+    function logout() {
+        redireccionar('/ecommerce')
+    }
+</script>
